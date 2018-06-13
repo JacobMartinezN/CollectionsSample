@@ -31,7 +31,7 @@ class ItemsAdapter(val items: List<Item>, val listener: (Item) -> Unit): Recycle
 
     override fun getItemCount() = items.size
 
-    //retorna un obejeto de la clase ViewHolder
+    //retorna un obejeto de la clase ViewHolder//
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int) = ViewHolder(parent.inflate(R.layout.item_view ))
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) = holder.bind(items[position], listener)
